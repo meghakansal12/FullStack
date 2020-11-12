@@ -47,7 +47,7 @@ function setGreeting(){
         document.body.style.backgroundImage='url("afternoon.jpg")';
         document.body.style.backgroundRepeat= 'no-repeat';
         greeting.innerHTML= 'Good Afternoon';
-        document.body.style.color= "white";
+        
     }
     else
     {
