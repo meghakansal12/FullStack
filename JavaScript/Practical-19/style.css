@@ -105,3 +105,7 @@ form button {
     top: 0px;
     border-left: 20px solid tomato;
 }
+
+/* ::placeholder {
+    font-size: 16px;
+} */
