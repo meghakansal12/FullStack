@@ -3,47 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical-20</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-<style>
-        .header{
-            min-height:100px; 
-        }
-        .left{
-            min-height:580px;
-        }
-        .side1{
-            min-height:280px;
-        }
-        .side2{
-            min-height:290px;
-        }
-        .footer{
-            min-height: 50px;
-        }
-    </style>
+    <title>Grid Layout</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="min-width: 576px;">
         <div class="row">
-            <div class="col-sm-12 mb-sm-3 mt-sm-2">
-                <div class="header bg-primary"></div>
+            <div class="col-md-12 bg-info" style="margin: 15px 0 15px 0;">
+                <div class="content" style="min-height: 100px;"></div>  
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-8 mb-sm-3">
-                <div class="left bg-info"></div>
+            <div class="col bg-primary">
+                <div class="content" style="min-height: 300px;"></div>  
             </div>
-            <div class="col-sm-4 mb-sm-3">
-                <div class="side1 bg-warning"></div>
-                <div class="side2 bg-success mt-sm-2"></div>
+            <div class="col" style="margin-left: 20px;">
+                <div class="row">
+                    <div class="col" style="min-height: 140px; background-color: rgb(255, 208, 0);"></div>
+                </div>
+                <div class="row">
+                    <div class="col" style="min-height: 140px; margin-top: 20px; background-color: rgb(214, 1, 1);"></div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 mb-sm-2">
-                <div class="footer bg-dark"></div>
+            <div class="col-md-12 bg-dark" style="margin: 15px 0 15px 0;">
+                <div class="content" style="min-height: 70px;"></div>  
             </div>
         </div>
+        
     </div>
 </body>
 </html>
